@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>M&J Travel - About Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="mustache.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="Data_mustache.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="styles.less" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<!--------------------Navigation-Bar------------------------->
+<header>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid" id="navbar">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="strayer_index.html"><img src="Strayer_WebsiteLogo.png" height="80"></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="strayer_index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="Trips.html">Trips
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Trips.html">Iceland</a></li>
+            <li><a href="#">Arches National Park</a></li>
+            <li><a href="#">Alaska</a></li>
+          </ul>
+        </li>
+        <li><a href="Pictures.html">Pictures</a></li>
+        <li class="active"><a href="About_Us.html">About Us</a></li>
+      </ul>
+    </div>
+  </nav> 
+</header>
+<br>
+<br>
+<br>
+<br>
+<!--------------------PageStart------------------------->
+
+
+<!--------------------Footer------------------------->
+<br>
+<br>
+<footer class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <div id="target">
+        <script id="template" type="x-tmpl-mustache">
+            {{#footer}}
+              <p>{{description}}</p>
+              <p>{{name}} - 2018</p>
+            {{/footer}}
+        </script>
+      </div>
+    </div>
+    <div class="col-md-4 text-center">
+      <div class="social">
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://plus.google.com/u/0/" class="fa fa-google"></a>
+      </div>
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+
+</footer>
+    
+</body>
+
+</html>
